@@ -6,12 +6,11 @@ AVD stands for [AnimatedVectorDrawable](https://developer.android.com/reference/
 
 ## I am a designer, what should I do?
 
-If your design resources is `.ai` format (Adobe Illustrator), you can easily export AVD resources by following steps; If not, consider to use AI to create them.
-
-1. Make sure you have installed BodyMovin plugin, if not please install. The installer and plugin can be found in this repository.
-2. Import your `.ai` resources to AE and create your animations.
-3. Click Window->Extensions->Bodymovin, choose your destination folder, then  click settings, scroll down and select it when you see AVD option, click save. Select your resources, click render, boom! You got a avd folder.
-4. Send the avd folder to Android developers of your company, he knows how to use it.
+1. If your design resources is `.ai` format (Adobe Illustrator), you can easily export AVD resources by following steps; If not, consider to use AI to create them.
+2. Make sure you have installed BodyMovin plugin, if not please install. The installer and plugin can be found in this repository.
+3. Import your `.ai` resources to AE and create your animations.
+4. Click Window->Extensions->Bodymovin, choose your destination folder, then  click settings, scroll down and select it when you see AVD option, click save. Select your resources, click render, boom! You got a avd folder.
+5. Send the avd folder to Android developers of your company, he knows how to use it.
 
 ## I am Android developer, what can I do?
 
