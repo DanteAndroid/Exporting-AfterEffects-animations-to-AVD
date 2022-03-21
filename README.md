@@ -2,7 +2,7 @@
 
 ## What is AVD? Why should I use it?
 
-AVD stands for [AnimatedVectorDrawable](https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable), it's a well-supported format (like Menu, BottomNavigationView) of drawable which can animate in Android. Besides, animations in AnimatedVectorDrawable can remain smooth even when there is heavy workload on the UI thread. See also [this video](https://www.youtube.com/watch?v=f3Lm8iOr4mE&list=PLHfouggbWIMiMeLpyP-KYdIsaJzV-oBLn&index=3&t=1603s).
+AVD stands for [AnimatedVectorDrawable](https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable), it's a well-supported format (like Menu, BottomNavigationView) of drawable which can animate in Android. Besides, animations in AnimatedVectorDrawable can remain smooth even when there is heavy workload on the UI thread. See also [Build smarter animations](https://www.youtube.com/watch?v=f3Lm8iOr4mE&list=PLHfouggbWIMiMeLpyP-KYdIsaJzV-oBLn&index=3&t=1603s).
 
 ## I am a designer, what should I do?
 
