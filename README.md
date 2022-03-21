@@ -17,11 +17,13 @@ If your design resources is `.ai` format (Adobe Illustrator), you can easily exp
 
 1. Ask your UI designer could she make animations with Adobe Illustrator & After Effects?
 2. If so, then you can send the tutorial above to her; If not, invite her to dinner and make her reconsider it.
-3. When you got AVD fold, which contains resources of your AVD drawable resouces, just copy them to your Android Studio project's drawable folder.
-4. You can preview your AVD animation (like `your_avd.xml`) now by click `play` button in preview screen.
+3. When you got AVD fold, which contains resources of your AVD drawable resouces (like `your_avd.xml`) , just copy them to your Android Studio project's drawable folder.
+4. You can preview your AVD animation now by click `play` button in preview screen.
+
+[Optional] 
+
 5. Create your static vector resource drawable from your_avd.xml. Just copy the vector element under android:drawable attribute and create new drawable file named `avd_resouce_selected.xml`. This drawable is usually used for your icon's selected/checked state.
 6. Create your selector resource as following:
-
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -30,26 +32,26 @@ If your design resources is `.ai` format (Adobe Illustrator), you can easily exp
         android:id="@+id/checked"
         android:drawable="@drawable/avd_resouce_selected"
         android:state_selected="true" />
+	
     <!-- This is a static icon provided by your UI designer -->
     <item
         android:id="@+id/unchecked"
         android:drawable="@drawable/icon_resource_default"
         android:state_selected="false" />
+	
     <!-- This is an animation when you select this icon -->
     <transition
         android:drawable="@drawable/avd_party"
         android:fromId="@+id/unchecked"
         android:toId="@+id/checked" />
 
+<!-- This is an animation when you unselect this icon -->
 <!--    <transition-->
- // This is an animation when you unselect this icon
 <!--        android:drawable="@drawable/avd_friends"-->
 <!--        android:fromId="@+id/checked"-->
 <!--        android:toId="@+id/unchecked" />-->
 </animated-selector>
-
 ```
-
 7. Reference your selector like this:
 
 ```
@@ -58,4 +60,4 @@ If your design resources is `.ai` format (Adobe Illustrator), you can easily exp
         android:icon="@drawable/home_icon_selector"
         android:title="@string/title_home" />
 ```
-
+8. You can see your animation when you check menu `navigation_home`
